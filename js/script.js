@@ -36,7 +36,7 @@ if (eta <= 18) {
 
 else if (eta >= 65) {
     discount= (40/100)
-    road = (price_train * discount_40).toFixed(2)
+    road = (price_train * discount).toFixed(2)
 }
 
 else {
