@@ -26,6 +26,8 @@ let price_train = (km * 0.21).toFixed(2);
 //    3.2- calcolare lo sconto in base all'età
 
 let discount
+let road 
+let final_price
 
 if (eta <= 18) {
     discount= (20 / 100) 
@@ -37,11 +39,11 @@ else if (eta >= 65) {
 }
 
 else {
-    final_price = price_train 
+    discount = 0
 }
 
-let road = (price_train * discount).toFixed(2);
-let final_price = (price_train - road).toFixed(2);
+road = (price_train * discount).toFixed(2);
+final_price = (price_train - road).toFixed(2);
 
 console.log(final_price) 
 
