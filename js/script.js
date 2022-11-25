@@ -37,12 +37,12 @@ console.log(discount_40)
 let road
 
 if (eta < 18) {
-    road = (price_train - discount_20)
+    road = (price_train * discount_20)
     console.log(road)
 }
 
 else if (eta > 65) {
-    road = (price_train - discount_40)
+    road = (price_train * discount_40)
     console.log(road)
 }
 
