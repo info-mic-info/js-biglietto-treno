@@ -20,34 +20,28 @@ let eta = parseInt(prompt("Età del passeggero"));
 // 3- calcolare prezzo totale del viaggio
 
 //    3.1- calcolare prezzo del biglietto in base ai km
-let price_train = (km * 0.21).toFixed(2) + "euro";
+let price_train = (km * 0.21).toFixed(2);
 console.log(price_train)
 
 //    3.2- calcolare lo sconto in base all'età
 
-
-// sconto 20%
-let discount_20 = (20 / 100)
-console.log(discount_20)
-
-// sconto 40%
-let discount_40 = (40 / 100)
-console.log(discount_40)
-
 let road
 
-if (eta < 18) {
-    road = (price_train * discount_20)
-    console.log(road)
+let discount 
+
+if (eta <= 18) {
+    discount= (20/100)
+    road = (price_train * discount).toFixed(2)  
 }
 
-else if (eta > 65) {
-    road = (price_train * discount_40)
-    console.log(road)
+else if (eta >= 65) {
+    discount= (40/100)
+    road = (price_train * discount_40).toFixed(2)
 }
 
 else {
-    let road=price_train
-    console.log(road)  
+    road=price_train 
 }
+
+console.log(road) 
 
