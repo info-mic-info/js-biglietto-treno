@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     border: 1px solid black;
+}
+
+
+.bg{
+    width: 100%;
+    background-color: red;
+    height: 200px;
+}
+
+
+.train-road{
+    padding: auto 0;
+}
+
+h1 {
+    color: white;
+}
